@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical|center"
+    android:background="@color/LightGrey"
+    android:id="@+id/full_contact_holder_root"
+    >
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        >
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="150dp"
+            android:id="@+id/full_contact_holder_left_layout"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/full_contact_holder_iv"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:src="@drawable/default_profile" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="75dp"
+            android:layout_height="150dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/full_contact_holder_right_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Name: "
+                        android:id="@+id/full_contact_holder_name"
+                        />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Phone: "
+                    android:id="@+id/full_contact_holder_phone"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Email: "
+                    android:id="@+id/full_contact_holder_email"
+                    />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

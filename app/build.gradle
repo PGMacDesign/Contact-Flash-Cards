@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "http://dl.bintray.com/jlmd/maven" }
+        maven { url "https://maven.google.com" }
+        mavenCentral()
+    }
+}
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "pgmacdesign.contactflashcards"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dependencies {
+        //Support lib:
+        implementation 'com.android.support:design:26.0.2'
+
+        //SDK
+        //compile 'com.github.stevenbward:Authenticating-Android-SDK:1.0.7'
+
+        //Retrofit, GSON, okhttp3
+        compile 'com.squareup.retrofit2:retrofit:2.3.0'
+        compile 'com.squareup.okhttp3:okhttp:3.9.0'
+        compile 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+        compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+        compile 'com.google.code.gson:gson:2.8.1'
+        //May be omitted
+        compile 'com.squareup.okio:okio:1.13.0'
+
+        //Multi-dex. For more info: https://developer.android.com/studio/build/multidex.html
+        compile 'com.android.support:multidex:1.0.1'
+
+        //My Lib
+        compile ('com.github.PGMacDesign:PGMacTips:0.0.53')
+
+        //Loading Animators
+        compile 'com.ldoublem.loadingview:loadingviewlib:1.0'
+        compile 'com.github.jlmd:AnimatedCircleLoadingView:1.1.5@aar'
+        compile 'com.github.ybq:Android-SpinKit:1.1.0'
+
+        //Navigation Tab Bar:
+        compile 'com.nightonke:boommenu:2.1.0'
+
+        //Buttons
+        compile 'info.hoang8f:fbutton:1.0.5'
+
+        //Animations Base. Link: https://github.com/JakeWharton/NineOldAndroids
+        implementation 'com.nineoldandroids:library:2.4.0'
+
+        //Part of The Android Animations collection below
+        implementation 'com.daimajia.easing:library:2.0@aar'
+        //Android Animations. Link: https://github.com/daimajia/AndroidViewAnimations
+        implementation 'com.daimajia.androidanimations:library:2.2@aar'
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
