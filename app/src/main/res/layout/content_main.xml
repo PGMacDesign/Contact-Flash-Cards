@@ -29,6 +29,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/content_main_search_view"
             android:layout_alignParentTop="true"
+            android:visibility="gone"
             />
 
         <android.support.v7.widget.RecyclerView

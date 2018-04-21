@@ -112,7 +112,7 @@ public class AdapterContacts extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
             case Phone:
                 PhoneContactHolder holder1 = (PhoneContactHolder) holder;
-                holder1.phone_contact_holder_tv.setText("Phone: " + phone);
+                holder1.phone_contact_holder_tv.setText("Phone:\n" + phone);
                 holder1.phone_contact_holder_root.setOnClickListener(clickListener);
                 if(this.oneSelectedAnimate){
                     this.oneSelectedAnimate = false;
@@ -123,7 +123,7 @@ public class AdapterContacts extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
             case Email:
                 EmailContactHolder holder2 = (EmailContactHolder) holder;
-                holder2.phone_contact_holder_tv.setText("Email: " + email);
+                holder2.phone_contact_holder_tv.setText("Email:\n" + email);
                 holder2.email_contact_holder_root.setOnClickListener(clickListener);
                 if(this.oneSelectedAnimate){
                     this.oneSelectedAnimate = false;
@@ -137,9 +137,9 @@ public class AdapterContacts extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 FullContactHolder holder3 = (FullContactHolder) holder;
                 ImageUtilities.setCircularImageWithPicasso(photoUri,
                         holder3.full_contact_holder_iv, profileImageDefault, context);
-                holder3.full_contact_holder_email.setText("Email: " + email);
-                holder3.full_contact_holder_phone.setText("Phone: " + phone);
-                holder3.full_contact_holder_email.setText("Name: " + name);
+                holder3.full_contact_holder_email.setText("Email:\n" + email);
+                holder3.full_contact_holder_phone.setText("Phone:\n" + phone);
+                holder3.full_contact_holder_email.setText("Name:\n" + name);
                 holder3.full_contact_holder_root.setOnClickListener(clickListener);
                 if(this.oneSelectedAnimate){
                     this.oneSelectedAnimate = false;

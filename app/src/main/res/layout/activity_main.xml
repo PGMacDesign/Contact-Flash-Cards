@@ -8,6 +8,7 @@
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
+        android:id="@+id/app_bar_layout"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -20,8 +21,81 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+	<!-- Spinner Layout -->
+	<LinearLayout
+		android:id="@+id/activity_main_spinner_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	    android:weightSum="100"
+	    android:background="@color/white"
+	    android:padding="2dp"
+	    android:layout_below="@+id/app_bar_layout"
+		>
+		
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="25"
+		    android:text=""
+		    android:textColor="@color/black"
+		    android:gravity="center_horizontal|center_vertical"
+		    android:id="@+id/activity_main_spinner_tv"
+			/>
+		
+		<Spinner
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="75"
+			android:id="@+id/activity_main_spinner"
+			
+			/>
+		
+	</LinearLayout>
 
+	<!-- Switch for include pictures only -->
+	<LinearLayout
+		android:id="@+id/activity_main_switch_layout"
+		android:layout_below="@+id/activity_main_spinner_layout"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:weightSum="100"
+		android:background="@color/white"
+		android:padding="2dp"
+		>
+		
+		
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="75"
+			android:text="Only Show Contacts With Pictures: "
+			android:textColor="@color/black"
+			android:gravity="center_horizontal|center_vertical"
+			android:id="@+id/activity_main_switch_tv"
+			/>
+		
+		<android.support.v7.widget.SwitchCompat
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="25"
+			android:id="@+id/activity_main_switch"
+			
+			/>
+		
+		
+	</LinearLayout>
+	
+	<!-- Recyclerview Layout -->
+    <include
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    layout="@layout/content_main"
+	    android:layout_below="@+id/activity_main_switch_layout"
+	    />
+
+	<!-- FAB -->
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"

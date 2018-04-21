@@ -5,14 +5,16 @@
     android:layout_gravity="center_horizontal|center_vertical|center"
     android:background="@color/LightGrey"
     android:id="@+id/picture_contact_holder_root"
+                android:clickable="true"
     >
 
     <ImageView
-        android:padding="4dp"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:padding="8dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:id="@+id/picture_contact_holder_iv"
         android:src="@drawable/default_profile"
+        android:clickable="false"
         />
 
 
