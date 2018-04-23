@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'realm-android'
 allprojects {
     repositories {
         jcenter()
@@ -17,6 +16,7 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -47,18 +47,12 @@ android {
         implementation 'com.squareup.picasso:picasso:2.5.2'
 
         //My Lib
-        implementation ('com.github.PGMacDesign:PGMacTips:0.0.54')
+        implementation ('com.github.PGMacDesign:PGMacTips:0.0.55')
 
         //Loading Animators
         implementation 'com.ldoublem.loadingview:loadingviewlib:1.0'
         implementation 'com.github.jlmd:AnimatedCircleLoadingView:1.1.5@aar'
         implementation 'com.github.ybq:Android-SpinKit:1.1.0'
-
-        //Navigation Tab Bar:
-        implementation 'com.nightonke:boommenu:2.1.0'
-
-        //Buttons
-        implementation 'info.hoang8f:fbutton:1.0.5'
 
         //Animations Base. Link: https://github.com/JakeWharton/NineOldAndroids
         implementation 'com.nineoldandroids:library:2.4.0'
@@ -80,3 +74,4 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
+apply plugin: 'realm-android'

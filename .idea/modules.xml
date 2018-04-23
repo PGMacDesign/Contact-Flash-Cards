@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Contact-Flash-Cards.iml" filepath="$PROJECT_DIR$/Contact-Flash-Cards.iml" />
+      <module fileurl="file://D:\pmacdowell\HOTB Android Workspace - 2016-03-21\ContactFlashCards\Contact-Flash-Cards.iml" filepath="D:\pmacdowell\HOTB Android Workspace - 2016-03-21\ContactFlashCards\Contact-Flash-Cards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContactFlashCards.iml" filepath="$PROJECT_DIR$/ContactFlashCards.iml" />
       <module fileurl="file://C:\Users\patri\AndroidWorkspace\Contact-Flash-Cards\ContactFlashCards.iml" filepath="C:\Users\patri\AndroidWorkspace\Contact-Flash-Cards\ContactFlashCards.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\Users\patri\AndroidWorkspace\Contact-Flash-Cards\app\app.iml" filepath="C:\Users\patri\AndroidWorkspace\Contact-Flash-Cards\app\app.iml" />

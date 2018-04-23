@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/email_contact_holder_root"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal|center_vertical|center"
+    android:clickable="true"
     android:background="@color/LightGoldenrodYellow"
-    android:id="@+id/email_contact_holder_root"
-                android:clickable="true"
-    >
+    android:padding="1dp">
 
     <TextView
-	    android:layout_width="200dp"
-	    android:layout_height="200dp"
-        android:textSize="20sp"
-        android:text="Email: "
         android:id="@+id/phone_contact_holder_tv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:clickable="false"
         android:gravity="center_vertical|center|center_horizontal"
-        android:textColor="@color/black"
-	    android:clickable="false"
         android:padding="8dp"
-        />
+        android:text="Email: "
+        android:textColor="@color/black"
+        android:textSize="17sp" />
 
 </RelativeLayout>

@@ -137,9 +137,9 @@ public class AdapterContacts extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 FullContactHolder holder3 = (FullContactHolder) holder;
                 ImageUtilities.setCircularImageWithPicasso(photoUri,
                         holder3.full_contact_holder_iv, profileImageDefault, context);
-                holder3.full_contact_holder_email.setText("Email:\n" + email);
-                holder3.full_contact_holder_phone.setText("Phone:\n" + phone);
-                holder3.full_contact_holder_email.setText("Name:\n" + name);
+                holder3.full_contact_holder_email.setText("Email:\n  " + email);
+                holder3.full_contact_holder_phone.setText("Phone:\n  " + phone);
+                holder3.full_contact_holder_name.setText("Name:\n  " + name);
                 holder3.full_contact_holder_root.setOnClickListener(clickListener);
                 if(this.oneSelectedAnimate){
                     this.oneSelectedAnimate = false;

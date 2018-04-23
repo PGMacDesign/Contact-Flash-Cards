@@ -9,35 +9,31 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:id="@+id/content_main_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/content_main_tv"
-        />
+        android:layout_centerVertical="true"
+        android:text="" />
 
     <RelativeLayout
         android:id="@+id/content_main_main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
-        >
+        android:visibility="gone">
 
         <android.support.v7.widget.SearchView
+            android:id="@+id/content_main_search_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/content_main_search_view"
             android:layout_alignParentTop="true"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         <android.support.v7.widget.RecyclerView
+            android:id="@+id/content_main_recyclerview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/content_main_search_view"
-            android:id="@+id/content_main_recyclerview"
-            />
+            android:layout_below="@+id/content_main_search_view" />
 
 
     </RelativeLayout>
